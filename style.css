@@ -42,12 +42,12 @@ body {
 	z-index:10;
 	padding: 13px;
 	padding-right: 15px;
-	font: 15px/20px monospace;
+	font: 15px Times New Roman, serif;
     letter-spacing: -0.3px;
 	cursor: move;
 	border-style: solid;
 	border-color: blue;
-	background-color: #eee;
+	background-color: #FFFFFF;
 }
 
 #logo {
