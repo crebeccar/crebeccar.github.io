@@ -107,9 +107,9 @@ body {
 
 .about{
 	position: fixed;
-	font-family: courier;
+	font-family: serif;
     letter-spacing: 0.5px;
-    font-size: 24px;
+    font-size: 40px;
     line-height: 19px;
     z-index: 100;
     color: rgba(0, 0.8);
