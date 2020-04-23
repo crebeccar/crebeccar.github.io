@@ -42,12 +42,12 @@ body {
 	z-index:10;
 	padding: 13px;
 	padding-right: 15px;
-	font: 15px Times New Roman, serif;
+	font: 40px Times New Roman, serif;
     letter-spacing: -0.3px;
 	cursor: move;
 	border-style: solid;
 	border-color: blue;
-	background-color: #FFFFFF;
+	background-color: none;
 }
 
 #logo {
@@ -96,10 +96,10 @@ body {
 	padding: 1px;
 }
 #navigation a.active{
-	color: #000;
+	color:  #ffff00;
 }
 #navigation a:hover{
-	color: #000;
+	color:  #ffff00;
 }
 #navigation .current_page_item a {
 	color: red;
