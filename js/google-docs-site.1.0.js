@@ -41,7 +41,12 @@ $(function() {
 		});
 
 		$("#menu").draggable({ cancel: "li" });
-    	// $( "div, p" ).disableSelection();
+		// $( "div, p" ).disableSelection();
+		
+        //ADD DRAGGABLE STUFF
+		$("#clock").draggable();
+        $("#weather").draggable();
+        
 	});
 
     // Keep navigation from getting borked when dragged on wider views

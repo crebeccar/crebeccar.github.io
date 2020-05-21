@@ -18,7 +18,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <img id="logo" src="logo.png">
-        <iframe src="http://free.timeanddate.com/clock/i79wic8d/n251/szw110/szh110/hoc00f/hbw10/cf100/hgr0/fiv0/fas34/fdi72/mhc000/mhs3/mhl20/mhw1/mhd84/mmv0/hhs1/hms1/hsc000/hss1" frameborder="0" width="110" height="110"></iframe>
         <div class="about"></div>
 
         <div id="menu">
@@ -33,6 +32,21 @@
             </ul>
         </div>
 
+        <!--Clock-->
+        <table id="clock">
+            <tr><td style="text-align: center;"><canvas id="canvas_tt5ec5a47213a7d" width="150" height="150"></canvas></td></tr>
+            <tr><td style="text-align: center;"><a href="#" style="text-decoration: none" class="clock24" id="tz24-1590010994-c1251-eyJzaXplIjoiMTUwIiwiYmdjb2xvciI6IjAwMDBGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NWVjNWE0NzIxM2E3ZCJ9" title="actual time Trenton" target="_blank" rel="nofollow">Local time in Princeton, NJ, USA</a></td></tr>
+        </table>
+        
+        <!-- Weather -->
+        <div id="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/40d36n74d67/princeton/?unit=us" data-label_1="Princeton, NJ, USA" data-label_2="Local Weather" data-font="Times New Roman" data-mode="Current" data-theme="original" data-basecolor="#fff" data-accent="rgba(255, 255, 255, 0.0)" data-textcolor="#00ff00" data-highcolor="#ff0000" data-lowcolor="#0000ff" data-suncolor="#fff42e" data-cloudfill="#0002ab" data-raincolor="#00ffff" >Princeton, NJ, USA Local Weather</a>
+            
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
+
         <div id="background-site"><iframe name="backgrnd" id="backgrnd" scrolling="yes" src=""></iframe></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -40,6 +54,9 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
         <script src="js/google-docs-site.1.0.js"></script>
+
+        <!--Clock-->
+        <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

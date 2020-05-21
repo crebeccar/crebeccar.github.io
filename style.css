@@ -56,6 +56,10 @@ body {
 	right: 70px;
 	top: 60px;
 	width: 300px;
+    
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
 }
     #logo-touch {
         display: none;
@@ -66,6 +70,10 @@ body {
 		width:160px;
 		margin: left:10%;
     }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #binder-clip{
 	margin-top: -38px;
@@ -117,6 +125,46 @@ body {
 	max-width: 277px;
 	right: 145px;
 	top: 450px;
+}
+
+/* CLOCK */
+#clock{
+	position: fixed;
+	top: 5rem;
+	left: 2rem;
+	z-index: 999;
+	display: block;
+}
+
+#clock:hover{
+    cursor:move;
+}
+
+#clock td a{
+    color: rgb(0, 255, 0);
+    font-family: "Times New Roman", sans-serif;
+    font-weight: normal;
+}
+
+#weather{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    height: auto;
+    width: 400px;
+    height: 99px;
+}
+
+#weather:hover{
+    cursor: move;
+}
+
+/* WEATHER */
+.weatherwidget-io{
+    border: 3px solid blue;
+    position: relative;
+    pointer-events: none;
 }
 
 /* Psuedo mobile styles for wide touch devices */
