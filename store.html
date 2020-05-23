@@ -16,25 +16,38 @@
     
         <h1 id="header">Postal Store</h1>
         <div id="grid">
-            <div class="grid-item">
-                <img class="product-thumbnail" src="img/510-postal-sunhat-1500.jpg">
-                <a class="product-info" href=#>Postal Sunhat<br>$10</a>
+            <div class="grid-item pant">
+                <div class="thumbnail-wrapper">
+                    <img class="product-thumbnail" src="img/Uniform/no-annotations/Postal_Pant_3.jpg">
+                    <img class="product-thumbnail-hover" src="img/Uniform/annotations/Postal_PantHover.jpg">
+                </div>
+                <a class="product-info" href=#>CM Carney 2020 Uniform Pant<br>$60</a>
+            </div>
+            <div class="grid-item short">
+                <div class="thumbnail-wrapper">
+                    <img class="product-thumbnail" src="img/Uniform/no-annotations/Postal_Short.jpg">
+                    <img class="product-thumbnail-hover" src="img/Uniform/annotations/Postal_ShortHover.jpg">
+                </div>
+                <a class="product-info" href=#>CM Carney 2020 Uniform Short<br>$40</a>
             </div>
             <div class="grid-item">
-                <img class="product-thumbnail" src="img/510-postal-sunhat-1500.jpg">
-                <a class="product-info" href=#>Postal Sunhat<br>$10</a>
+                <div class="thumbnail-wrapper">
+                    <img class="product-thumbnail" src="img/Uniform/no-annotations/Postal_Tee6.jpg">
+                </div>
+                <a class="product-info" href=#>CM Carney 2020 Uniform Tee<br>$5</a>
             </div>
-            <div class="grid-item">
-                <img class="product-thumbnail" src="img/510-postal-sunhat-1500.jpg">
-                <a class="product-info" href=#>Postal Sunhat<br>$10</a>
+            <div class="grid-item shirt">
+                <div class="thumbnail-wrapper">
+                    <img class="product-thumbnail" src="img/Uniform/no-annotations/Postal_Shirt5.jpg">
+                    <img class="product-thumbnail-hover" src="img/Uniform/annotations/Postal_ShirtHover.jpg">
+                </div>
+                <a class="product-info" href=#>CM Carney 2020 Uniform Shirt<br>$40</a>
             </div>
-            <div class="grid-item">
-                <img class="product-thumbnail" src="img/510-postal-sunhat-1500.jpg">
-                <a class="product-info" href=#>Postal Sunhat<br>$10</a>
-            </div>
-            <div class="grid-item">
-                <img class="product-thumbnail" src="img/510-postal-sunhat-1500.jpg">
-                <a class="product-info" href=#>Postal Sunhat<br>$10</a>
+            <div class="grid-item stamps">
+                <div class="thumbnail-wrapper">
+                    <img class="product-thumbnail" src="img/Uniform/Stamps.jpg">
+                </div>
+                <a class="product-info" href=#>Post-Office x Post Office Stamp Collection<br>$10</a>
             </div>
         </div>
         
@@ -42,5 +55,37 @@
             <h1>STORE COMING SOON</h1>
         </div>
         
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".pant").hover(function(){
+                    $(".pant .product-thumbnail").hide();
+                    $(".pant .product-thumbnail-hover").show();
+                },
+                    function(){
+                    $(".pant .product-thumbnail").show();
+                    $(".pant .product-thumbnail-hover").hide();
+                });
+                
+                $(".shirt").hover(function(){
+                    $(".shirt .product-thumbnail").hide();
+                    $(".shirt .product-thumbnail-hover").show();
+                },
+                    function(){
+                    $(".shirt .product-thumbnail").show();
+                    $(".shirt .product-thumbnail-hover").hide();
+                });
+                
+                $(".short").hover(function(){
+                    $(".short .product-thumbnail").hide();
+                    $(".short .product-thumbnail-hover").show();
+                },
+                    function(){
+                    $(".short .product-thumbnail").show();
+                    $(".short .product-thumbnail-hover").hide();
+                });
+            });
+        </script>
     </body>
 </html>
